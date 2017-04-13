@@ -10,6 +10,7 @@
   margin-top: 10px;
   margin-bottom: 15px;
   padding: 20px;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -29,7 +30,6 @@ h1 {
 .navbar {
   background: image_url('food.png');
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  height: 60px;
 }
 
 .navbar-brand {
@@ -37,4 +37,11 @@ h1 {
   font-size: 35px;
   font-family: 'Lobster', cursive;
   text-shadow: 2px 2px #ff0000;
+}
+
+
+.navbar-inverse .navbar-toggler-icon {
+    background-image: image_url(hamburger_menu);
+    height: 45px;
+    width: 45px;
 }
