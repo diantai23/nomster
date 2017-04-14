@@ -39,9 +39,19 @@ h1 {
   text-shadow: 2px 2px #ff0000;
 }
 
-
 .navbar-inverse .navbar-toggler-icon {
     background-image: image_url(hamburger_menu);
     height: 45px;
     width: 45px;
+}
+
+.navbar-inverse .navbar-nav .nav-link {
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+.pagination {
+  color: black;
+  font-weight: 900;
+  font-size: 15px;
 }
