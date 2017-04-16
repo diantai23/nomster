@@ -60,3 +60,6 @@ gem 'will_paginate', '~> 3.1.0'
 
 #Simple Form
 gem 'simple_form'
+
+#Font Awesome Icons
+gem 'font-awesome-rails'
