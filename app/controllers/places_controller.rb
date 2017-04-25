@@ -1,5 +1,5 @@
 class PlacesController < ApplicationController
-  before_action :authenticate_user!, only: [:new, :create, :edit]
+  before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
 
   def index
     @places = Place.order("created_at ASC").all.paginate(:page => params[:page], :per_page => 5)
@@ -33,6 +33,9 @@ class PlacesController < ApplicationController
 
   def destroy
     @place = Place.find(params[:id])
+    if @place.user != current_user
+      return render text: 'Only the listing creator has deleting privileges.', status: :forbidden
+    end
     @place.destroy
     redirect_to root_path
   end
