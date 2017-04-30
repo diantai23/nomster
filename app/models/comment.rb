@@ -3,11 +3,11 @@ class Comment < ApplicationRecord
   belongs_to :place
 
   RATINGS = {
-    '★': '1_star',
-    '★★': '2_stars',
-    '★★★': '3_stars',
-    '★★★★': '4_stars',
     '★★★★★': '5_stars',
+    '★★★★': '4_stars',
+    '★★★': '3_stars',
+    '★★': '2_stars',
+    '★': '1_star'
   }
 
   def humanized_rating
