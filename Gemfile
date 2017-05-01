@@ -75,3 +75,6 @@ gem "figaro"
 
 # carrierwave
 gem 'carrierwave', '~> 1.0'
+
+#fog gem - for carrierwave to be able to communicate w amazon s3
+gem "fog"
